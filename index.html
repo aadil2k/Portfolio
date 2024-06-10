@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="./Mohammad Aadil Photo.jpeg" alt="About Me">
+    <p>Hi there! I'm Mohammad Aadil, a passionate and eager data analyst ready to dive into the world of insights and analytics. With a solid foundation in Python, SQL, Excel, Linux, and ETL (Extract, Transform, Load), I bring a versatile skill set to the table.
+    </p>
+
+    <p style="text-align: left;">
+      🔍 My journey into the realm of data began with a curiosity for uncovering patterns and extracting valuable insights. Leveraging Python, I've crafted efficient scripts for data manipulation and analysis, harnessing libraries like Pandas and NumPy to wrangle complex datasets with ease.
+
+<br>📊 Proficient in SQL, I'm adept at querying databases to extract the information needed to drive informed decisions. Whether it's crafting intricate queries or optimizing database performance, I thrive in the world of relational databases.
+
+<br>🔧 Comfortable navigating Linux environments, I've honed my skills in system administration and command-line utilities, ensuring smooth operations and efficient workflows.
+
+<br>📈 Excel serves as another powerful tool in my arsenal, allowing me to visualize data, perform advanced calculations, and create insightful dashboards for stakeholders.
+
+<br>💼 ETL (Extract, Transform, Load) processes are where I excel, as I've successfully designed and implemented data pipelines to streamline the flow of information, ensuring data integrity and consistency across systems.
+
+<br>🎓 Armed with a Bachelor's degree in Computer Sciene and Engineering, I'm eager to apply my knowledge and skills to real-world challenges, driving meaningful insights and contributing to data-driven decision-making processes.
+
+<br>🚀 Whether it's optimizing processes, uncovering hidden trends, or solving complex problems, I'm always up for the challenge, fueled by a passion for turning data into actionable insights.
+
+        </p>
+        <a href="./Mohammad Aadil Resume.pdf" class="btn btn-outline-primary" style="text-align: left;">My Resume</a>
+
+      </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./pizza.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">In this project, I analyzed pizza sales data using MySQL, focusing on four tables: pizzas, pizza_type, orders, and order_details. I executed SQL queries to uncover sales trends, customer preferences, and operational insights. This analysis identified best-selling pizzas, peak sales times, and top categories, showcasing the effectiveness of data-driven strategies in optimizing food business operations.</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/aadil2k/Pizza_sales-SQL/blob/main/Pizza%20Sales.pdf" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./Netflix.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text"> I developed a Tableau dashboard to analyze Netflix's content library and viewing trends. The dashboard provides insights into genre popularity, viewer ratings, release trends, and geographical distribution. This visual analysis helps identify key content trends and informs strategic decisions for content acquisition and viewer engagement.
+            The project aimed to provide deep insights into Netflix’s offerings.
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://public.tableau.com/views/NetflixDashboard_16896181551440/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./sport.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">I conducted a Python-based analysis of NCAA basketball games from 1985 to 2016. Leveraging libraries like Pandas and Matplotlib, I explored game trends, team performances, and player statistics over three decades. The analysis provided insights into scoring patterns, win-loss trends, and championship predictions, highlighting the evolution of strategies and performance in NCAA basketball.
+
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/aadil2k/Sport-Data-Analysis/blob/main/Sports_Data_Analysis_Use_case_NCAA_basketball_games_from_1985_to_2016.ipynb" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">My Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="./python.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Python is a high-level, interpreted programming language known for its readability, simplicity, and versatility. Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages in the world.</p>
+            <a href="https://github.com/aadil2k/Certificates/blob/main/Cognitiveclass%20PY0101EN%20Certificate%20_%20Cognitive%20Class.pdf" class="btn btn-outline-primary">View Certificate</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="./datavisual.jpg" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Data visualization is a crucial aspect of data analysis and communication, transforming raw data into actionable insights through visual representations. The goal is to make data easier to understand and to identify patterns, trends, and insights that inform decision-making.</p>
+            <a href="https://github.com/aadil2k/Certificates/blob/main/Tata%20Certificate.pdf" class="btn btn-outline-primary">View Certificate</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="./SQL.jpeg" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">SQL (Structured Query Language) is a standardized programming language used to manage and manipulate relational databases. SQL is essential for managing relational databases, making it a crucial skill for developers, data analysts, and anyone working with data.</p>
+            <a href="https://github.com/aadil2k/Certificates/blob/main/TNA%20SQL%20Certificate.pdf" class="btn btn-outline-primary">View Certificate</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="./DA.jpg" class="card-img-top" alt="Data Alanytics">
+          <div class="card-body">
+            <h5 class="card-title">Data Analytics</h5>
+            <p class="card-text">Data Analytics is the process of examining, cleaning, transforming, and modeling data to extract meaningful insights, support decision-making, and inform strategy. It leverages various techniques and tools to identify patterns, relationships, and trends in data.</p>
+            <a href="https://github.com/aadil2k/Certificates/blob/main/EXL%20Internship%20Certificate.pdf" class="btn btn-outline-primary">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> hellomdaadil@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> 7083017471</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <a href="https://linkedin.com/in/mohammad-aadil-ma" target="_blank">
+          <img src="./linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <!-- <div class="col-lg-2 col-md-4 mb-4">
+        <a href="./Mohammad Aadil Resume.pdf" target="_blank">
+          <img src="./resumelogo.jpg" alt="Resume" class="social-icon">
+          Resume
+        </a>
+      </div> -->
+      <div class="col-lg-6">
+        <a href="https://github.com/aadil2k" target="_blank">
+          <img src="./github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <!-- <div class="col-lg-2 col-md-4 mb-4">
+        <a href="" target="_blank">
+          <img src="" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://youtube.com/c/yourchannel" target="_blank">
+          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+          YouTube
+        </a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
